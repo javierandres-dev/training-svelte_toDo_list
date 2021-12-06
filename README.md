@@ -1,7 +1,7 @@
 # training-svelte_toDo_list
 :octocat: training-svelte_toDo_list
 
-To Do List is an Application build with Svelte, it's a basic exercise to learn how works Svelte, it allow a basic CRUD operations using as backend a fake (but very funtional) REST API.
+To Do List, is an Application build with Svelte, it's a basic exercise to learn how Svelte works, it allows basic CRUD operations using as backend a fake but very funtional REST API.
 
 ## Stack
 * JavaScript
@@ -42,7 +42,7 @@ Done!
 You can handle ToDo List(CRUD)
 
 #### Data (Optional)
-Go to the following URL on your browser to view data into server
+Go to the following URL on your browser to see data into server
 ```
 http://localhost:4000/todos
 ```

@@ -39,7 +39,7 @@ Go to the following URL on your browser
 http://localhost:5000
 ```
 Done!  
-You can handle ToDo List(CRUD)
+You can handle ToDo List (CRUD)
 
 #### Data (Optional)
 Go to the following URL on your browser to see data into server

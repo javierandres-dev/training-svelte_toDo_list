@@ -1,15 +1,9 @@
 <script>
-  import { setContext } from 'svelte';
+  import Top from './components/Top.svelte';
   import Main from './components/Main.svelte';
-
-  $: refresh = false;
-
-  const toggleRefresh = () => (refresh = !refresh);
-
-  setContext('refresh', refresh);
-  setContext('toggleRefresh', toggleRefresh);
-
-  $: console.log('refresh:', refresh);
+  import Bottom from './components/Bottom.svelte';
 </script>
 
+<Top />
 <Main />
+<Bottom />

@@ -1,9 +1,8 @@
 <script>
-  import { getContext } from 'svelte';
   import { v4 as uuidv4 } from 'uuid';
   import { createTodo } from '../helpers/apiRequests';
 
-  let toggleRefresh = getContext('toggleRefresh');
+  export let getTodos;
 
   let todo = {
     id: uuidv4(),
@@ -12,11 +11,21 @@
     timestamp: '',
   };
 
+  const resetTodo = () => {
+    todo = {
+      id: uuidv4(),
+      title: '',
+      completed: false,
+      timestamp: '',
+    };
+  };
+
   const handleSubmit = async () => {
     const date = new Date();
     todo.timestamp = date.toISOString();
     const res = await createTodo(todo);
-    if (res.message === 'successfully') toggleRefresh();
+    if (res.message === 'successfully') getTodos();
+    resetTodo();
   };
 </script>
 
